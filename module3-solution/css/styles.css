@@ -1,0 +1,22 @@
+/* 针对三个并排区块的样式 */
+.menu-section {
+    height: 700px; /* 按照作业要求，设置一个较大的高度 */
+    background-color: #e0e0e0;
+    border: 2px solid #ffffff; /* 加个白色边框，让三个灰块在视觉上分开，平板/手机端堆叠时更好看 */
+    margin-bottom: 20px; 
+    padding: 20px;
+}
+
+/* 针对手机屏幕 (xs: max-width 767px) 的特殊样式 */
+@media (max-width: 767px) {
+    /* 给移动端下拉菜单设置不同的背景色 */
+    #mobile-menu {
+        background-color: #f8f8f8;
+        border-top: 1px solid #ddd;
+    }
+    
+    /* 让下拉菜单的每一项底部有一条分割线 */
+    #mobile-menu .nav li {
+        border-bottom: 1px solid #ddd;
+    }
+}
